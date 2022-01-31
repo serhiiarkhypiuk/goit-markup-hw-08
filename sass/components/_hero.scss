@@ -1,0 +1,38 @@
+/* Описание стилей секции герой */
+
+.hero {
+  background-color: $secondary-backgroung;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  background-position: center;
+  color: $main-backgroung;
+  text-align: center;
+  padding: 200px 0px;
+  margin: 0 auto;
+  &__header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0px auto 30px;
+  }
+  &__button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accent-text-color;
+    color: inherit;
+    padding: 10px 32px;
+    transition: background-color $transition;
+    &:hover,
+    &:focus {
+      background-color: $button-active;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

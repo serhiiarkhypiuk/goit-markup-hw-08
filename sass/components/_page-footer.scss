@@ -1,0 +1,114 @@
+/* Описание стилей футера */
+
+.page-footer {
+  background-color: $secondary-backgroung;
+  padding: 60px 0px;
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logosecondpart {
+    color: $main-backgroung;
+    font-family: $fontadditional;
+  }
+  &__header {
+    font-weight: bold;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $main-backgroung;
+    margin: 0px 0px 20px 70px;
+  }
+  &__contactslist {
+    margin-top: 20px;
+    font-style: normal;
+  }
+  &__contactstext {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $transition;
+    &:hover,
+    &:focus,
+    &--current {
+      color: $main-backgroung;
+    }
+  }
+  &__contactsitem {
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__subscription {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-backgroung;
+    margin: 0px 0px 20px 93px;
+  }
+}
+
+.page-footer .socials {
+  &__item {
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__list {
+    margin: 0px 93px 0px 70px;
+  }
+  &__link {
+    &:hover,
+    &:focus {
+      background-color: $accent-text-color;
+    }
+  }
+  &__instagram-icon,
+  &__twitter-icon,
+  &__facebook-icon,
+  &__linkedin-icon {
+    fill: $main-backgroung;
+  }
+}
+
+.subscription {
+  display: flex;
+  &__email {
+    padding: 15px 16px;
+    margin-right: 12px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    background-color: $secondary-backgroung;
+    color: $main-backgroung;
+    &:focus {
+      border-color: $main-backgroung;
+    }
+  }
+  &__button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accent-text-color;
+    padding: 10px 29px;
+    transition: background-color $transition;
+    display: flex;
+    color: $main-backgroung;
+    &:hover,
+    &:focus {
+      background: $button-active;
+    }
+  }
+  &__send-icon {
+    margin-left: 10px;
+    fill: $main-backgroung;
+  }
+}

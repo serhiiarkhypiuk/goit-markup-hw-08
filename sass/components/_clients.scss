@@ -1,0 +1,38 @@
+/* Описание стилей секции клиентов */
+
+.clients {
+  text-align: center;
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    color: $main-text-color;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  &__link {
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    display: block;
+    color: $light-icons;
+    border: 1px solid $light-icons;
+    border-radius: 4px;
+    transition: color $transition, border-color $transition;
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      border-color: $accent-text-color;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* Описание стилей хедера */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  &__pages {
+    display: flex;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__havigation {
+    display: flex;
+    align-items: center;
+  }
+  &__logofirstpart {
+    padding: 24px 0px 25px 0px;
+    font-family: $fontadditional;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $accent-text-color;
+    margin-right: 93px;
+  }
+  &__logosecondpart {
+    font-family: $fontadditional;
+    color: $main-text-color;
+  }
+  &__link {
+    display: block;
+    padding: 32px 0px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    position: relative;
+    transition: color $transition;
+  }
+  &__contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__contactlink {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    transition: color $transition;
+  }
+  &__mail-icon,
+  &__smartphone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__link--current {
+    color: $accent-text-color;
+    &:after {
+      display: flex;
+      content: '';
+      position: absolute;
+      border-radius: 2px;
+      background: $accent-text-color;
+      height: 4px;
+      width: 100%;
+      bottom: -1px;
+      left: 0px;
+    }
+  }
+  &__item,
+  &__contact {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link,
+  &__contactlink {
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Описание стилей для иконок соц. сетей
+
+.socials {
+  &__list {
+    display: flex;
+    margin: 0px 32px 30px;
+  }
+  &__instagram-icon,
+  &__twitter-icon,
+  &__facebook-icon,
+  &__linkedin-icon {
+    fill: currentColor;
+  }
+  &__link {
+    display: block;
+    height: 44px;
+    width: 44px;
+    padding: 12px 12px;
+    color: $light-icons;
+    border-radius: 50%;
+    transition: background-color $transition, color $transition;
+    &:hover,
+    &:focus {
+      background-color: $accent-text-color;
+      color: $main-backgroung;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

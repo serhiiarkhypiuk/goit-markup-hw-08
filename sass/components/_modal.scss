@@ -1,0 +1,163 @@
+// Описание стилей модального окна
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms, visibility 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+
+.is-hidden {
+  opacity: 0.5;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: $main-backgroung;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms;
+  padding: 40px;
+  text-align: center;
+  &__close {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: border-color $transition, fill $transition;
+    &:hover,
+    &:focus {
+      border-color: $accent-text-color;
+      fill: $accent-text-color;
+    }
+    &-icon {
+      &:hover,
+      &:focus {
+        border-color: $accent-text-color;
+        fill: $accent-text-color;
+      }
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accent-text-color;
+    color: $main-backgroung;
+    padding: 10px 55px;
+    transition: background-color $transition;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+      background-color: $button-active;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.form {
+  &__header {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $main-text-color;
+    margin-bottom: 12px;
+  }
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    margin-bottom: 4px;
+    display: flex;
+  }
+  &__field {
+    position: relative;
+    display: block;
+    & textarea {
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      margin-bottom: 20px;
+      display: inline-block;
+      position: relative;
+      padding: 12px 16px;
+      height: 120px;
+      width: 100%;
+      resize: none;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    transform: translateY(95%);
+  }
+  &__input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    position: relative;
+    padding: 12px 12px 12px 42px;
+    &:focus {
+      border-color: $accent-text-color;
+      outline: none;
+      & ~ .form__icon {
+        fill: $accent-text-color;
+      }
+    }
+  }
+}
+
+.agreement {
+  display: inline-flex;
+  align-items: center;
+  color: $secondary-text-color;
+  &__icon {
+    margin-right: 7px;
+    fill: none;
+    border: 2px solid $main-text-color;
+    border-radius: 2px;
+    transition: border-color $transition, background-color $transition, fill $transition;
+  }
+  &__checkbox:checked {
+    & ~ .agreement__icon {
+      border: transparent;
+      fill: $main-backgroung;
+      background-color: $accent-text-color;
+    }
+  }
+  &__link {
+    color: $accent-text-color;
+  }
+}
+
+.aggreement__button:hover,
+.aggreement__button:focus {
+  background-color: $button-active;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}

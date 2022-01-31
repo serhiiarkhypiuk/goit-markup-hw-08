@@ -1,0 +1,38 @@
+/* Описание стилей секции чем мы занимаемся */
+
+.work {
+  padding-top: 0px;
+  &__header {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    border: none;
+  }
+  &__list {
+    display: flex;
+  }
+  &__thumb {
+    position: relative;
+  }
+  &__label {
+    color: $main-backgroung;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 27px 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  &__example {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
