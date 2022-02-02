@@ -584,6 +584,7 @@ body {
   .page-footer__container {
     display: flex;
     align-items: baseline;
+    text-align: start;
   }
 }
 
@@ -597,7 +598,6 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -764,8 +764,6 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -776,6 +774,22 @@ body {
   transition: transform 500ms;
   padding: 40px;
   text-align: center;
+  min-height: 609px;
+  width: 450px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 93.75%;
+    height: 76.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close {
@@ -823,9 +837,15 @@ body {
 .form__header {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__header {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -885,6 +905,15 @@ body {
   display: inline-flex;
   align-items: center;
   color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreement__icon {

@@ -20,8 +20,6 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   background-color: $main-backgroung;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,6 +31,16 @@
   transition: transform 500ms;
   padding: 40px;
   text-align: center;
+  min-height: 609px;
+  width: 450px;
+  @media screen and (max-width: 479px) {
+    width: 93.75%;
+    height: 76.5%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    min-height: 581px;
+  }
   &__close {
     padding: 6px;
     width: 30px;
@@ -81,9 +89,12 @@
   &__header {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     color: $main-text-color;
     margin-bottom: 12px;
+    @media screen and (min-width: $desktop) {
+      line-height: 1.15;
+    }
   }
   &__label {
     font-size: 12px;
@@ -137,6 +148,12 @@
   display: inline-flex;
   align-items: center;
   color: $secondary-text-color;
+  font-size: 12px;
+  line-height: 1.16;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   &__icon {
     margin-right: 7px;
     fill: none;

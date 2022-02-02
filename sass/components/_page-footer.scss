@@ -8,6 +8,7 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       align-items: baseline;
+      text-align: start;
     }
   }
   &__logosecondpart {
@@ -19,7 +20,6 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     text-transform: uppercase;
     color: $main-backgroung;
     @media screen and (min-width: $desktop) {
