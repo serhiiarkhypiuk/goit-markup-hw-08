@@ -2,17 +2,33 @@
 
 .portfolio {
   &__examples {
-    display: flex;
-    flex-wrap: wrap;
-    margin: calc(-1 * 15px);
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: calc(-1 * 15px);
+      justify-content: center;
+    }
   }
   &__example {
-    margin: 15px;
     background-color: $main-backgroung;
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 30px) / 2);
     transition: box-shadow $transition;
     overflow: hidden;
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 90px) / 3);
+      margin: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(odd) {
+      @media screen and (max-width: $pre-desktop) and (min-width: $tablet) {
+        margin-right: 30px;
+      }
+    }
     &:hover,
     &:focus {
       cursor: pointer;

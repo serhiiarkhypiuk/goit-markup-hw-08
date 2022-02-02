@@ -4,6 +4,9 @@
   border-bottom: 1px solid #ececec;
 
   &__pages {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
     @media screen and (max-width: $tablet) {
       display: none;
     }
@@ -13,6 +16,9 @@
     }
   }
   &__container {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
       align-items: center;
@@ -32,6 +38,10 @@
     font-size: 24px;
     line-height: 1.16;
     color: $accent-text-color;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      padding: 26px 0px;
+      margin-right: 88px;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 26px;
       line-height: 1.2;
@@ -54,22 +64,37 @@
     transition: color $transition;
   }
   &__contacts {
-    @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+    margin-left: 84px;
+    align-content: center;
+    @media screen and (max-width: $pre-tablet) {
       display: none;
     }
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      display: flex;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
   }
   &__contactlink {
-    display: flex;
-    justify-content: center;
-    padding: 32px 0px;
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.16;
     color: $secondary-text-color;
     transition: color $transition;
+    justify-content: center;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.14;
+      padding: 32px 0px;
+      letter-spacing: 0.02em;
+    }
   }
   &__mail-icon,
   &__smartphone-icon {
@@ -90,10 +115,20 @@
       left: 0px;
     }
   }
-  &__item,
-  &__contact {
+
+  &__item {
     &:not(:last-child) {
       margin-right: 50px;
+    }
+  }
+  &__contact {
+    &:not(:last-child) {
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+        margin-bottom: 10px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 50px;
+      }
     }
   }
   &__link,

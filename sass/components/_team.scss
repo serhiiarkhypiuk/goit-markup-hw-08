@@ -16,6 +16,10 @@
     }
   }
   &__list {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
     }
@@ -32,8 +36,13 @@
   line-height: 1.18;
   display: inline-block;
   width: 100%;
-  @media screen and (max-width: $desktop) {
-    margin-bottom: 30px;
+  &:nth-last-child(n + 3) {
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    width: 354px;
   }
   &__title {
     margin: 30px 0px 10px 0px;
@@ -43,6 +52,11 @@
   &__role {
     color: $secondary-text-color;
     margin-bottom: 16px;
+  }
+  &:nth-child(odd) {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      margin-right: 30px;
+    }
   }
   &:not(:last-child) {
     @media screen and (min-width: $desktop) {

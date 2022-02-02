@@ -15,7 +15,7 @@
     }
   }
   &__list {
-    @media screen and(min-width: $mobile) {
+    @media screen and (min-width: $mobile) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -43,6 +43,10 @@
       color: $accent-text-color;
       border-color: $accent-text-color;
     }
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      max-width: 226px;
+      padding: 16px 60px;
+    }
     @media screen and (min-width: $desktop) {
       padding: 16px 32px;
       width: 170px;
@@ -50,18 +54,30 @@
     }
   }
   &__item {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      &:nth-child(-n + 2),
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-right: 30px;
+      }
+    }
     &:not(:last-child) {
       @media screen and (max-width: $mobile) {
         margin-bottom: 30px;
       }
     }
     &:nth-last-child(n + 3) {
-      @media screen and (max-width: $desktop) {
+      @media screen and (max-width: $pre-tablet) {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-last-child(n + 4) {
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
         margin-bottom: 30px;
       }
     }
     &:nth-child(2n + 1) {
-      @media screen and (min-width: $mobile) {
+      @media screen and (max-width: $pre-tablet) {
         margin-right: 30px;
       }
     }

@@ -2,17 +2,31 @@
 
 .qualities {
   &__list {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
       margin: -15px;
     }
   }
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &:nth-last-child(n + 3) {
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(odd) {
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+        margin-right: 30px;
+      }
+    }
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      width: 354px;
     }
     @media screen and (min-width: $desktop) {
-      margin: 15px;
+      margin: 0px 15px;
       width: calc((100%-120px) / 4);
     }
   }
@@ -27,7 +41,6 @@
     margin-bottom: 30px;
     @media screen and (min-width: $desktop) {
       width: 270px;
-      height: 120px;
     }
   }
   &__title {
@@ -38,8 +51,8 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $main-text-color;
-    @media screen and (min-width: $desktop) {
-      text-align: unset;
+    @media screen and (min-width: $tablet) {
+      text-align: start;
     }
   }
   &__text {
