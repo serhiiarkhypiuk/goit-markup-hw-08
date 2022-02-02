@@ -7,7 +7,7 @@
     @media screen and (min-width: $tablet) {
       display: flex;
     }
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-tablet) {
       display: none;
     }
     @media screen and (min-width: $desktop) {

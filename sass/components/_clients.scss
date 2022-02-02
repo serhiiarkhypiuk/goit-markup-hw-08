@@ -77,7 +77,7 @@
       }
     }
     &:nth-child(2n + 1) {
-      @media screen and (max-width: $pre-tablet) {
+      @media screen and (min-width: $mobile) and (max-width: $pre-tablet) {
         margin-right: 30px;
       }
     }

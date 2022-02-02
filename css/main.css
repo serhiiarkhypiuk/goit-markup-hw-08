@@ -69,7 +69,6 @@ body {
 .container {
   width: 100%;
   padding: 0px 15px;
-  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -206,7 +205,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-header__pages {
     display: none;
   }
@@ -775,7 +774,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
