@@ -2,6 +2,7 @@
 
 .page-header {
   border-bottom: 1px solid #ececec;
+
   &__pages {
     @media screen and (max-width: $tablet) {
       display: none;
