@@ -65,6 +65,11 @@
       @media screen and (max-width: $mobile) {
         margin-bottom: 30px;
       }
+      @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
     }
     &:nth-last-child(n + 3) {
       @media screen and (max-width: $pre-tablet) {
@@ -78,11 +83,6 @@
     }
     &:nth-child(2n + 1) {
       @media screen and (min-width: $mobile) and (max-width: $pre-tablet) {
-        margin-right: 30px;
-      }
-    }
-    @media screen and (min-width: $desktop) {
-      &:not(:last-child) {
         margin-right: 30px;
       }
     }
