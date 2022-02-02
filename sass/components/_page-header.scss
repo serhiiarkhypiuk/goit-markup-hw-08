@@ -3,25 +3,40 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   &__pages {
-    display: flex;
-    align-items: center;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__container {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__havigation {
     display: flex;
-    align-items: center;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__logofirstpart {
-    padding: 24px 0px 25px 0px;
+    padding: 16px 0px;
     font-family: $fontadditional;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     color: $accent-text-color;
-    margin-right: 93px;
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.2;
+      padding: 24px 0px 25px 0px;
+      margin-right: 93px;
+    }
   }
   &__logosecondpart {
     font-family: $fontadditional;
@@ -38,6 +53,9 @@
     transition: color $transition;
   }
   &__contacts {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
     margin-left: auto;
     display: flex;
     align-items: center;

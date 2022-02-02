@@ -3,23 +3,37 @@
 .clients {
   text-align: center;
   &__header {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    color: $main-text-color;
-    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 1.178;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.16;
+      color: $main-text-color;
+      margin-bottom: 50px;
+    }
   }
   &__list {
-    display: flex;
+    @media screen and(min-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: calc(100% / 2);
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
   &__icon {
     fill: currentColor;
   }
   &__link {
-    padding: 16px 32px;
-    width: 170px;
-    height: 92px;
-    display: block;
+    padding: 16px 52px;
+    max-width: 210px;
+    max-height: 92px;
+    display: inline-flex;
+    flex-wrap: wrap;
     color: $light-icons;
     border: 1px solid $light-icons;
     border-radius: 4px;
@@ -29,10 +43,32 @@
       color: $accent-text-color;
       border-color: $accent-text-color;
     }
+    @media screen and (min-width: $desktop) {
+      padding: 16px 32px;
+      width: 170px;
+      height: 92px;
+    }
   }
   &__item {
     &:not(:last-child) {
-      margin-right: 30px;
+      @media screen and (max-width: 479px) {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-last-child(n + 3) {
+      @media screen and (max-width: $desktop) {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(2n + 1) {
+      @media screen and (min-width: $mobile) {
+        margin-right: 30px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }

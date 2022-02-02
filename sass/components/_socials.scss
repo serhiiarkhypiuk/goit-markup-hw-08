@@ -3,7 +3,11 @@
 .socials {
   &__list {
     display: flex;
-    margin: 0px 32px 30px;
+    margin: 0px auto 24px;
+    justify-content: center;
+    @media screen and (min-width: $desktop) {
+      margin: 0px 32px 30px;
+    }
   }
   &__instagram-icon,
   &__twitter-icon,
