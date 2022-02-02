@@ -25,7 +25,7 @@
       margin-bottom: 30px;
     }
     &:nth-child(odd) {
-      @media screen and (max-width: $pre-desktop) and (min-width: $tablet) {
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
         margin-right: 30px;
       }
     }

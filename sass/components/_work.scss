@@ -1,7 +1,7 @@
 /* Описание стилей секции чем мы занимаемся */
 
 .work {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $pre-desktop) {
     display: none;
   }
   padding-top: 0px;

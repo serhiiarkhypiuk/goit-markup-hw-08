@@ -62,7 +62,7 @@
       }
     }
     &:not(:last-child) {
-      @media screen and (max-width: $mobile) {
+      @media screen and (max-width: $pre-mobile) {
         margin-bottom: 30px;
       }
       @media screen and (min-width: $desktop) {

@@ -506,7 +506,7 @@ body {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -604,7 +604,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .member:nth-last-child(n + 3) {
     margin-bottom: 30px;
   }
@@ -752,7 +752,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1267,7 +1267,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__example:nth-child(odd) {
     margin-right: 30px;
   }

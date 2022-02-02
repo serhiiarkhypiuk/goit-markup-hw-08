@@ -37,7 +37,7 @@
   display: inline-block;
   width: 100%;
   &:nth-last-child(n + 3) {
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: $pre-desktop) {
       margin-bottom: 30px;
     }
   }
