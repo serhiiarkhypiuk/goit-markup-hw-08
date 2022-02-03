@@ -22,7 +22,9 @@
       margin: 15px;
     }
     &:not(:last-child) {
-      margin-bottom: 30px;
+      @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+        margin-bottom: 30px;
+      }
     }
     &:nth-child(odd) {
       @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
