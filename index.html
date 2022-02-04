@@ -168,19 +168,28 @@
                 <ul class="work__list">
                     <li class="work__example">
                         <div class="work__thumb">
-                            <img src="./images/box1.jpg" alt="Десктопные приложения" width="370">
+                            <picture>
+                                <source srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"/>
+                                <img src="./images/box1.jpg" alt="Десктопные приложения">
+                            </picture>
                             <p class="work__label">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work__example">
                         <div class="work__thumb">
-                             <img src="./images/box2.jpg" alt="Мобильные приложения" width="370">
+                            <picture>
+                                <source srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" />
+                                <img src="./images/box2.jpg" alt="Мобильные приложения">
+                            </picture>
                              <p class="work__label">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work__example">
                         <div class="work__thumb">
-                            <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370">
+                            <picture>
+                                <source srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" />
+                                <img src="./images/box3.jpg" alt="Дизайнерские решения">
+                            </picture>
                             <p class="work__label">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -193,7 +202,12 @@
                 <h2 class="team__header">Наша команда</h2>
                 <ul class="team__list">
                     <li class="member">
-                        <img src="./images/igor.jpg" alt="фото Игоря Демьяненко" width="270">
+                        <picture>
+                            <source srcset="./images/igor_desktop.jpg 1x, ./images/igor_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/igor_tablet.jpg 1x, ./images/igor_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/igor_mob.jpg 1x, ./images/igor_mob@2x.jpg 2x" media="(min-width: 320px)"/>
+                            <img src="./images/igor_desktop.jpg" alt="фото Игоря Демьяненко" >
+                        </picture>
                         <h3 class="member__title">Игорь Демьяненко</h3>
                         <p class="member__role">Product Designer</p>
                         <div class="socials">
@@ -230,7 +244,12 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/olga.jpg" alt="фото Ольги Репиной" width="270">
+                        <picture>
+                            <source srcset="./images/olga_desktop.jpg 1x, ./images/olga_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/olga_tablet.jpg 1x, ./images/olga_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/olga_mob.jpg 1x, ./images/olga_mob@2x.jpg 2x" media="(min-width: 320px)" />
+                            <img src="./images/olga_desktop.jpg" alt="фото Ольги Репиной">
+                        </picture>
                         <h3 class="member__title">Ольга Репина</h3>
                         <p class="member__role"> Frontend Developer</p>
                         <div class="socials">
@@ -267,7 +286,12 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/nick.jpg" alt="фото Николая Тарасова" width="270">
+                        <picture>
+                            <source srcset="./images/nick_desktop.jpg 1x, ./images/nick_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/nick_tablet.jpg 1x, ./images/nick_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/nick_mob.jpg 1x, ./images/nick_mob@2x.jpg 2x" media="(min-width: 320px)" />
+                            <img src="./images/nick_desktop.jpg" alt="фото Николая Тарасова">
+                        </picture>
                         <h3 class="member__title">Николай Тарасов</h3>
                         <p class="member__role">Marketing</p>
                         <div class="socials">
@@ -304,7 +328,12 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/mike.jpg" alt="фото Михаила Ермакова" width="270">
+                        <picture>
+                            <source srcset="./images/mike_desktop.jpg 1x, ./images/mike_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/mike_tablet.jpg 1x, ./images/mike_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mike_mob.jpg 1x, ./images/mike_mob@2x.jpg 2x" media="(min-width: 320px)" />
+                            <img src="./images/mike_desktop.jpg" alt="фото Михаила Ермакова" width="270">
+                        </picture>
                         <h3 class="member__title">Михаил Ермаков</h3>
                         <p class="member__role">UI Designer</p>
                         <div class="socials">
