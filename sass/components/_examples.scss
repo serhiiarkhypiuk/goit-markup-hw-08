@@ -24,6 +24,8 @@
     &:not(:last-child) {
       @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
       }
     }
     &:nth-child(odd) {
@@ -46,6 +48,9 @@
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #eeeeee;
     border-top: 0;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      flex-grow: 1;
+    }
   }
   &__title {
     font-weight: bold;
