@@ -39,7 +39,7 @@ a {
 body {
   background-color: #ffffff;
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -123,7 +123,8 @@ body.modal-open {
   border-radius: 50%;
 }
 
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle:hover,
+.menu-toggle:focus {
   fill: #188ce8;
 }
 
@@ -152,7 +153,8 @@ body.modal-open {
   color: #2196f3;
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: #2196f3;
 }
 
@@ -249,7 +251,7 @@ body.modal-open {
 
 .page-header__logofirstpart {
   padding: 16px 0px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 1.16;
@@ -273,7 +275,7 @@ body.modal-open {
 }
 
 .page-header__logosecondpart {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #212121;
 }
 
@@ -335,7 +337,8 @@ body.modal-open {
   }
 }
 
-.page-header__mail-icon, .page-header__smartphone-icon {
+.page-header__mail-icon,
+.page-header__smartphone-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -372,14 +375,18 @@ body.modal-open {
   }
 }
 
-.page-header__link:hover, .page-header__link:focus, .page-header__contactlink:hover, .page-header__contactlink:focus {
+.page-header__link:hover,
+.page-header__link:focus,
+.page-header__contactlink:hover,
+.page-header__contactlink:focus {
   color: #2196f3;
 }
 
 /* Описание стилей секции герой */
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -391,19 +398,23 @@ body.modal-open {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mob@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_tablet.jpg);
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_tablet@2x.jpg);
   }
 }
 
@@ -411,13 +422,17 @@ body.modal-open {
   .hero {
     padding: 200px 0px;
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_desktop.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_desktop@2x.jpg);
   }
 }
 
@@ -448,7 +463,8 @@ body.modal-open {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover, .hero__button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -625,7 +641,8 @@ body.modal-open {
 
 .member {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   font-size: 16px;
@@ -687,7 +704,10 @@ body.modal-open {
   }
 }
 
-.socials__instagram-icon, .socials__twitter-icon, .socials__facebook-icon, .socials__linkedin-icon {
+.socials__instagram-icon,
+.socials__twitter-icon,
+.socials__facebook-icon,
+.socials__linkedin-icon {
   fill: currentColor;
 }
 
@@ -698,10 +718,12 @@ body.modal-open {
   padding: 12px 12px;
   color: #afb1b8;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__link:hover, .socials__link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -759,10 +781,12 @@ body.modal-open {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
@@ -783,7 +807,9 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients__item:nth-child(-n + 2), .clients__item:nth-child(4), .clients__item:nth-child(5) {
+  .clients__item:nth-child(-n + 2),
+  .clients__item:nth-child(4),
+  .clients__item:nth-child(5) {
     margin-right: 30px;
   }
 }
@@ -848,7 +874,7 @@ body.modal-open {
 
 .page-footer__logosecondpart {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .page-footer__header {
@@ -883,11 +909,14 @@ body.modal-open {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-footer__contactstext:hover, .page-footer__contactstext:focus, .page-footer__contactstext--current {
+.page-footer__contactstext:hover,
+.page-footer__contactstext:focus,
+.page-footer__contactstext--current {
   color: #ffffff;
 }
 
-.page-footer__contactsitem:hover, .page-footer__contactsitem:focus {
+.page-footer__contactsitem:hover,
+.page-footer__contactsitem:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -940,11 +969,15 @@ body.modal-open {
   }
 }
 
-.page-footer .socials__link:hover, .page-footer .socials__link:focus {
+.page-footer .socials__link:hover,
+.page-footer .socials__link:focus {
   background-color: #2196f3;
 }
 
-.page-footer .socials__instagram-icon, .page-footer .socials__twitter-icon, .page-footer .socials__facebook-icon, .page-footer .socials__linkedin-icon {
+.page-footer .socials__instagram-icon,
+.page-footer .socials__twitter-icon,
+.page-footer .socials__facebook-icon,
+.page-footer .socials__linkedin-icon {
   fill: #ffffff;
 }
 
@@ -1006,7 +1039,8 @@ body.modal-open {
   color: #ffffff;
 }
 
-.subscription__button:hover, .subscription__button:focus {
+.subscription__button:hover,
+.subscription__button:focus {
   background: #188ce8;
 }
 
@@ -1046,7 +1080,8 @@ body.modal-open {
 .modal {
   background-color: #ffffff;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: transform 500ms;
   padding: 40px;
@@ -1089,15 +1124,18 @@ body.modal-open {
   position: absolute;
   top: 8px;
   right: 8px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close:hover, .modal__close:focus {
+.modal__close:hover,
+.modal__close:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
 
-.modal__close-icon:hover, .modal__close-icon:focus {
+.modal__close-icon:hover,
+.modal__close-icon:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -1115,7 +1153,8 @@ body.modal-open {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.modal__button:hover, .modal__button:focus {
+.modal__button:hover,
+.modal__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -1207,7 +1246,8 @@ body.modal-open {
   fill: none;
   border: 2px solid #212121;
   border-radius: 2px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement__checkbox:checked ~ .agreement__icon {
@@ -1255,13 +1295,18 @@ body.modal-open {
   text-align: center;
   color: #212121;
   background-color: #f5f4fa;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button:hover, .portfolio__button:focus, .portfolio__button--active {
+.portfolio__button:hover,
+.portfolio__button:focus,
+.portfolio__button--active {
   color: #ffffff;
   background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio__item {
@@ -1308,9 +1353,12 @@ body.modal-open {
   }
 }
 
+.portfolio__example:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__example:not(:last-child) {
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -1322,12 +1370,15 @@ body.modal-open {
   }
 }
 
-.portfolio__example:hover, .portfolio__example:focus {
+.portfolio__example:hover,
+.portfolio__example:focus {
   cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__example:hover .portfolio__overlay, .portfolio__example:focus .portfolio__overlay {
+.portfolio__example:hover .portfolio__overlay,
+.portfolio__example:focus .portfolio__overlay {
   transform: translateY(0%);
 }
 
