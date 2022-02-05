@@ -1,5 +1,8 @@
 .menu-container {
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &.is-open {
     transform: translateX(0);
   }
@@ -58,7 +61,6 @@
 }
 
 .contacts {
-  margin-top: 302px;
   font-family: inherit;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -85,8 +87,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  margin-top: 64px;
-  margin-right: 83px;
+  margin: 64px 83px 48px 0px;
   &__link {
     color: $accent-text-color;
   }
