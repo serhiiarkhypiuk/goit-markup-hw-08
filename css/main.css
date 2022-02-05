@@ -161,6 +161,7 @@ body.modal-open {
   margin-top: 302px;
   font-family: inherit;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .contacts__mobile-number {
@@ -656,6 +657,7 @@ body.modal-open {
 .member__title {
   margin: 30px 0px 10px 0px;
   font-weight: 500;
+  font-size: 16px;
   color: #212121;
 }
 
@@ -913,7 +915,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .page-footer__subscription {
-    margin: 0px 0px 20px 93px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1309,8 +1311,10 @@ body.modal-open {
   }
 }
 
-.portfolio__example:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .portfolio__example:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
