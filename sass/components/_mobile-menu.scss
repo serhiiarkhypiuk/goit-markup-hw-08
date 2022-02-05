@@ -1,4 +1,5 @@
 .menu-container {
+  z-index: 999;
   &.is-open {
     transform: translateX(0);
   }
