@@ -12,6 +12,9 @@
     }
   }
   &__item {
+    &:nth-last-child(n + 2) {
+      margin-bottom: 30px;
+    }
     &:nth-last-child(n + 3) {
       @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
         margin-bottom: 30px;
