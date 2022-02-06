@@ -197,8 +197,9 @@ body.modal-open {
   color: #2196f3;
 }
 
-.mobile-socials__delimeter {
-  color: rgba(33, 33, 33, 0.2);
+.mobile-socials__item:not(:last-child)::after {
+  content: '';
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin: 0 10px;
 }
 
