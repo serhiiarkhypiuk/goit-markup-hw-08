@@ -1201,7 +1201,9 @@ body.modal-open {
 }
 
 .agreement {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   color: #757575;
   font-size: 12px;

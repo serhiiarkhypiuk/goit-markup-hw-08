@@ -151,7 +151,9 @@
 }
 
 .agreement {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   color: $secondary-text-color;
   font-size: 12px;
